@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <title>Avilly Club</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
 <style>
 * {
   margin: 0;
@@ -12,124 +14,141 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
+  font-family: 'Inter', sans-serif;
+  background: #faf9f7;
   color: #111;
 }
 
 /* TOP BAR */
 .topbar {
-  background: #000;
+  background: #111;
   color: #fff;
   text-align: center;
   padding: 10px;
-  font-size: 14px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
 /* HEADER */
 header {
-  padding: 20px 40px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  background: #faf9f7;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 nav a {
-  margin-left: 20px;
+  margin-left: 30px;
   text-decoration: none;
   color: #111;
-  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-/* BANNER */
-.banner {
-  height: 80vh;
-  background: url("https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1600&q=80")
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1505739771912-9fbb9c6b4d08?auto=format&fit=crop&w=1600&q=80")
     center / cover no-repeat;
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 80px;
 }
 
-.banner div {
-  background: rgba(255,255,255,0.85);
-  padding: 40px;
+.hero-box {
+  background: rgba(250,249,247,0.9);
+  padding: 50px;
+  max-width: 420px;
 }
 
-.banner h2 {
-  font-size: 48px;
+.hero-box h2 {
+  font-size: 42px;
+  font-weight: 300;
   margin-bottom: 10px;
 }
 
-.banner p {
-  font-size: 18px;
+.hero-box p {
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
-/* PRODUTOS */
+/* SECTION */
 .section {
-  padding: 80px 40px;
+  padding: 100px 60px;
 }
 
 .section h2 {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
 }
 
+/* PRODUCTS */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
 }
 
 .product {
-  border: 1px solid #ddd;
+  background: #fff;
   padding: 20px;
   text-align: center;
 }
 
 .product img {
   width: 100%;
-  height: 280px;
+  height: 340px;
   object-fit: cover;
 }
 
 .product h3 {
-  margin: 15px 0 5px;
+  margin: 20px 0 8px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .product p {
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .product a {
   display: inline-block;
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
+  padding: 10px 24px;
+  border: 1px solid #111;
   text-decoration: none;
+  color: #111;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 
-/* SOBRE */
+/* ABOUT */
 .about {
   max-width: 800px;
   margin: auto;
   text-align: center;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 /* FOOTER */
 footer {
-  background: #000;
+  background: #111;
   color: #fff;
   text-align: center;
-  padding: 30px;
-  margin-top: 80px;
+  padding: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
 }
 </style>
 </head>
@@ -137,46 +156,39 @@ footer {
 <body>
 
 <div class="topbar">
-  Frete grátis para todo o Brasil
+  FRETE GRÁTIS PARA TODO O BRASIL
 </div>
 
 <header>
-  <h1>Avilly Club</h1>
+  <h1>AVILLY CLUB</h1>
   <nav>
     <a href="#produtos">Produtos</a>
     <a href="#sobre">Sobre</a>
   </nav>
 </header>
 
-<section class="banner">
-  <div>
-    <h2>Nova Coleção</h2>
-    <p>Estilo, simplicidade e presença.</p>
+<section class="hero">
+  <div class="hero-box">
+    <h2>Timeless Style</h2>
+    <p>Elegância europeia. Essencial. Atemporal.</p>
   </div>
 </section>
 
 <section class="section" id="produtos">
-  <h2>Destaques</h2>
+  <h2>COLEÇÃO</h2>
 
   <div class="products">
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="">
-      <h3>Camiseta Premium</h3>
-      <p>R$ 129,90</p>
+      <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990" alt="">
+      <h3>Suéter Classic</h3>
+      <p>Inspirado em ícones do estilo europeu</p>
       <a href="https://wa.me/55SEUNUMERO">Comprar</a>
     </div>
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1520974735194-6c0c1e45c9a3" alt="">
-      <h3>Moletom Essential</h3>
-      <p>R$ 249,90</p>
-      <a href="https://wa.me/55SEUNUMERO">Comprar</a>
-    </div>
-
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="">
-      <h3>Tênis Casual</h3>
-      <p>R$ 399,90</p>
+      <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772" alt="">
+      <h3>Sneaker Premium</h3>
+      <p>R$ 1.199,90</p>
       <a href="https://wa.me/55SEUNUMERO">Comprar</a>
     </div>
   </div>
@@ -184,17 +196,18 @@ footer {
 
 <section class="section" id="sobre">
   <div class="about">
-    <h2>Sobre a Avilly Club</h2>
+    <h2>SOBRE A AVILLY CLUB</h2>
     <p>
-      A Avilly Club nasce com foco no essencial.
-      Design atemporal, qualidade e identidade
-      para quem valoriza estilo e presença.
+      A Avilly Club nasce da inspiração no lifestyle europeu,
+      na estética old money e no design atemporal.
+      Criamos peças que atravessam tendências
+      e refletem identidade, presença e sofisticação.
     </p>
   </div>
 </section>
 
 <footer>
-  © 2026 • Avilly Club • Todos os direitos reservados
+  © 2026 • AVILLY CLUB • ALL RIGHTS RESERVED
 </footer>
 
 </body>
